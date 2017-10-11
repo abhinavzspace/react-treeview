@@ -10,7 +10,8 @@
     "start": "NODE_ENV=development node server.js",
     "lint": "eslint src demos",
     "build-demos": "NODE_ENV=production webpack -p",
-    "prerelease": "babel src --out-dir lib && NODE_ENV=production webpack --config webpack.prod.config.js"
+    "prerelease":
+      "babel src --out-dir lib && NODE_ENV=production webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,6 @@
     "babel": "^5.8.23",
     "babel-eslint": "^4.1.3",
     "babel-loader": "^5.3.1",
-    "babel-preset-stage-0": "^6.24.1",
     "eslint-plugin-react": "^3.5.1",
     "prop-types": "^15.5.10",
     "react": ">=15.0.0",
@@ -52,6 +52,7 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "prop-types": "^15.5.8"
   },
   "react-native": {
